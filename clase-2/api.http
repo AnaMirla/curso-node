@@ -1,0 +1,12 @@
+GET http://localhost:5432/pokemon/ditto
+
+POST http://localhost:5432/pokemon
+Content-Type: application/json
+
+{
+    "name": ditto,
+    "type": "normal",
+    "moves": [
+        "transform"
+    ]
+}

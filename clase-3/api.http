@@ -1,0 +1,25 @@
+# Crear una película
+POST  http://localhost:1234/movies
+
+Content-Type: application/json
+
+{
+    "title": "Harry Potter and the Sorcerer's Stone",
+    "year": 2001,
+    "director": "Chris Columbus",
+    "duration": 152,
+    "poster": "https://m.media-amazon.com/images/I/81YOuOGFCJL._AC_SY679_.jpg",
+    "genre": [
+        "Adventure",
+        "Fantasy"
+    ]
+}
+
+## Recuperar todas las películas
+GET http://localhost:1234/movies
+
+## Recuperar una película por id 
+GET http://localhost:1234/movies/e10143ee-ef50-486f-ba92-ae3cb2437d2f
+
+## Recuperar todas las películas por un género
+GET http://localhost:1234/movies?genre=Romance
