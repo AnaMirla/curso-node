@@ -1,8 +1,7 @@
 # Crear una película
-POST  http://localhost:1234/movies
+POST  http://localhost:1234/movies HTTP/1.1
 
 Content-Type: application/json
-
 {
     "title": "Harry Potter and the Sorcerer's Stone",
     "year": 2001,

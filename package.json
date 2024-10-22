@@ -5,7 +5,9 @@
   "scripts": {
     "dev:1": "nodemon ./clase-2/http.js",
     "dev:2": "nodemon ./clase-2/routing.js",
-    "dev:3": "node --watch ./clase-2/express.js"
+    "dev:3": "node --watch ./clase-2/express.js",
+    "dev:4": "nodemon ./clase-3/app.js",
+    "dev:5": "node --watch ./clase-3/app.js"
   },
   "keywords": [],
   "author": "",
