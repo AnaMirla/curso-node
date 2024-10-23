@@ -1,7 +1,16 @@
-# Crear una película
-POST  http://localhost:1234/movies HTTP/1.1
+## Recuperar todas las peliculas
+GET http://localhost:1234/movies
 
+## Recuperar una película por id 
+GET http://localhost:1234/movies/dcdd0fad-a94c-4810-8acc-5f108d3b18c3
+
+## Recuperar todas las películas por un género
+GET http://localhost:1234/movies?genre=drama
+
+# Crear una película
+POST    http://localhost:1234/movies
 Content-Type: application/json
+
 {
     "title": "Harry Potter and the Chamber of Secrets",
     "year": 2002,
@@ -14,11 +23,10 @@ Content-Type: application/json
     ]
 }
 
-## Recuperar todas las películas
-GET http://localhost:1234/movies
+##Actualizar una película
+PATCH  http://localhost:1234/movies/dcdd0fad-a94c-4810-8acc-5f108d3b18c3
+Content-Type: application/json
 
-## Recuperar una película por id 
-GET http://localhost:1234/movies/e10143ee-ef50-486f-ba92-ae3cb2437d2f
-
-## Recuperar todas las películas por un género
-GET http://localhost:1234/movies?genre=Romance
+{
+    "year": 1994
+}
