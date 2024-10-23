@@ -111,19 +111,19 @@ app.options("/movies", (req, res) => {
 });
 
 // Encontrar un puerto libre y levantar el servidor
-// findFreePort(3000, (err, freePort) => {
-//     if (err) {
-//         console.error("Error finding free port:", err);
-//         return;
-//     }
+findFreePort(3000, (err, freePort) => {
+    if (err) {
+        console.error("Error finding free port:", err);
+        return;
+    }
 
-//     app.listen(freePort, () => {
-//         console.log(`Server listening on port http://localhost:${freePort}/movies`);
-//     });
-// });
-
-const PORT = process.env.PORT ?? 1234
-
-app.listen(PORT, () => {
-    console.log(`Server listening on port http:localhost:${PORT}/movies`)
+    app.listen(freePort, () => {
+        console.log(`Server listening on port http://localhost:${freePort}/movies`);
+    });
 });
+
+// const PORT = process.env.PORT ?? 1234
+
+// app.listen(PORT, () => {
+//     console.log(`Server listening on port http:localhost:${PORT}/movies`)
+// });
