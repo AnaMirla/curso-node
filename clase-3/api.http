@@ -12,10 +12,10 @@ POST    http://localhost:1234/movies
 Content-Type: application/json
 
 {
-    "title": "Harry Potter and the Chamber of Secrets",
-    "year": 2002,
+    "title": "Harry Potter y el Prisionero de Azkaban",
+    "year": 2003,
     "director": "Chris Columbus",
-    "duration": 161,
+    "duration": 170,
     "poster": "https://m.media-amazon.com/images/I/51E9Vxy5IfL._AC_.jpg",
     "genre": [
         "Adventure",
@@ -24,9 +24,9 @@ Content-Type: application/json
 }
 
 ##Actualizar una película
-PATCH  http://localhost:1234/movies/dcdd0fad-a94c-4810-8acc-5f108d3b18c3
+PATCH  http://localhost:1234/movies/ec4233b5-7543-412e-bc40-06157da09e63
 Content-Type: application/json
 
 {
-    "year": 1994
+    "year": 2004
 }
